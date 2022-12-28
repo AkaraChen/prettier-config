@@ -27,14 +27,14 @@ pnpm add prettier @akrc/prettier-config -D
 Create a `.prettierrc`, and fill in:
 
 ```js
-"@akrc/prettier-config"
+"prettier-config-akrc"
 ```
 
 If you want to override some config, you need a `.prettierrc.js`:
 
 ```js
 module.exports = {
-  ...require("@akrc/prettier-config"),
+  ...require("prettier-config-akrc"),
   semi: false,
 };
 ```
