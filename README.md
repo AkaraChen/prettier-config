@@ -22,15 +22,6 @@ You need to install prettier to use this config.
 ```shell
 pnpm add prettier @akrc/prettier-config -D
 ```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
 ### Usage <a name = "usage"></a>
 
 Create a `.prettierrc`, and fill in:
