@@ -1,8 +1,8 @@
-# @akrc/prettier-config
+# prettier-config-akrc
 
 ## Table of Contents
 
-- [@akrc/prettier-config](#akrcprettier-config)
+- [prettier-config-akrc](#prettier-config-akrc)
   - [Table of Contents](#table-of-contents)
   - [About ](#about-)
   - [Getting Started ](#getting-started-)
