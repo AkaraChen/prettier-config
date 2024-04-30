@@ -12,7 +12,7 @@
     },
     "scripts": {
         "format": "prettier --write .",
-        "release": "bumpp -r"
+        "release": "bumpp"
     },
     "version": "0.1.0"
 }
