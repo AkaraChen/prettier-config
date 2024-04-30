@@ -5,6 +5,23 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@akrc/create-prettier@workspace:apps/create-prettier":
+  version: 0.0.0-use.local
+  resolution: "@akrc/create-prettier@workspace:apps/create-prettier"
+  dependencies:
+    "@akrc/monorepo-tools": "npm:^1.2.1"
+    "@types/node": "npm:^20.12.7"
+    consola: "npm:^3.2.3"
+    nypm: "npm:^0.3.8"
+    tslib: "npm:^2.6.2"
+    tsup: "npm:^8.0.2"
+    type-fest: "npm:^4.18.0"
+    typescript: "npm:^5.4.5"
+  bin:
+    create-prettier: dist/index.mjs
+  languageName: unknown
+  linkType: soft
+
 "@akrc/monorepo-tools@npm:^1.2.1":
   version: 1.2.1
   resolution: "@akrc/monorepo-tools@npm:1.2.1"
@@ -896,23 +913,6 @@ __metadata:
   checksum: 10c0/c606220524ec88a05bb1baf557e9e0e04a0c08a9c35d7a08652d99de195c4ddcb6572040a7df57a18ff38bbc13ce9880ad032d56630cef27bef72768ef0ac078
   languageName: node
   linkType: hard
-
-"create-prettier@workspace:apps/create-prettier":
-  version: 0.0.0-use.local
-  resolution: "create-prettier@workspace:apps/create-prettier"
-  dependencies:
-    "@akrc/monorepo-tools": "npm:^1.2.1"
-    "@types/node": "npm:^20.12.7"
-    consola: "npm:^3.2.3"
-    nypm: "npm:^0.3.8"
-    tslib: "npm:^2.6.2"
-    tsup: "npm:^8.0.2"
-    type-fest: "npm:^4.18.0"
-    typescript: "npm:^5.4.5"
-  bin:
-    create-prettier: dist/index.mjs
-  languageName: unknown
-  linkType: soft
 
 "cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.3":
   version: 7.0.3

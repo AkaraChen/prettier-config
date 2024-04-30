@@ -1,5 +1,5 @@
 {
-    "name": "create-prettier",
+    "name": "@akrc/create-prettier",
     "version": "0.0.3",
     "packageManager": "yarn@4.1.1",
     "devDependencies": {
