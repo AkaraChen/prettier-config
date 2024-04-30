@@ -11,5 +11,8 @@
     },
     "files": [
         "./index.json"
-    ]
+    ],
+    "scripts": {
+      "publish": "npm publish --access public"
+    }
 }

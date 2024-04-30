@@ -11,7 +11,8 @@
     },
     "scripts": {
         "build": "tsup",
-        "prepublish": "yarn build"
+        "prepublish": "yarn build",
+        "publish": "npm publish --access public"
     },
     "dependencies": {
         "@akrc/monorepo-tools": "^1.2.1",

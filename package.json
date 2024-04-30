@@ -11,7 +11,7 @@
     },
     "scripts": {
         "format": "prettier --write .",
-        "release": "bumpp -r"
+        "release": "bumpp -r && turbo run publish"
     },
     "version": "1.0.0"
 }
