@@ -11,7 +11,7 @@
     },
     "scripts": {
         "format": "prettier --write .",
-        "release": "bumpp -r && yarn workspaces foreach -A npm publish"
+        "release": "bumpp -r"
     },
     "version": "1.0.0"
 }
