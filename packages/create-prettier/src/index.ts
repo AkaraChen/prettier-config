@@ -15,11 +15,13 @@ if (isRoot) {
     consola.success(`Monorepo detected.`)
 }
 
-await ensureDependencyInstalled('prettier', {
-    workspace: isRoot,
-    dev: true,
-    cwd: searchDir,
-})
+for (const pkg of ['prettier', 'prettier-config-akrc']) {
+    await ensureDependencyInstalled(pkg, {
+        workspace: isRoot,
+        dev: true,
+        cwd: searchDir,
+    })
+}
 consola.success(`Prettier installed.`)
 
 const prettierConfigPath = `${searchDir}/.prettierrc`
