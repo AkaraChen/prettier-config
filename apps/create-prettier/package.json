@@ -1,0 +1,21 @@
+{
+    "name": "create-prettier",
+    "packageManager": "yarn@4.1.1",
+    "devDependencies": {
+        "@types/node": "^20.12.7",
+        "tslib": "^2.6.2",
+        "tsup": "^8.0.2",
+        "type-fest": "^4.18.0",
+        "typescript": "^5.4.5"
+    },
+    "scripts": {
+        "build": "tsup",
+        "prepublish": "yarn build"
+    },
+    "dependencies": {
+        "@akrc/monorepo-tools": "^1.2.1",
+        "consola": "^3.2.3",
+        "nypm": "^0.3.8"
+    },
+    "bin": "dist/index.mjs"
+}

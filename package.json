@@ -1,15 +1,18 @@
 {
-  "name": "prettier-config-akrc",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.json",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "exports": {
-    ".": "./index.json"
-  },
-  "files": [
-    "./index.json"
-  ]
+    "name": "prettier-config-workspace",
+    "private": true,
+    "packageManager": "yarn@4.1.1",
+    "workspaces": [
+        "packages/**",
+        "apps/**"
+    ],
+    "devDependencies": {
+        "bumpp": "^9.4.1",
+        "prettier": "^3.2.5"
+    },
+    "scripts": {
+        "format": "prettier --write .",
+        "release": "bumpp -r"
+    },
+    "version": "0.0.2"
 }

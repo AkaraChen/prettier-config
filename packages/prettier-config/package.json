@@ -1,0 +1,15 @@
+{
+    "name": "prettier-config-akrc",
+    "version": "0.0.2",
+    "description": "",
+    "main": "index.json",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "exports": {
+        ".": "./index.json"
+    },
+    "files": [
+        "./index.json"
+    ]
+}
