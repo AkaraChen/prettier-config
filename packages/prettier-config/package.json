@@ -1,6 +1,6 @@
 {
     "name": "prettier-config-akrc",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "index.json",
     "keywords": [],
@@ -13,6 +13,6 @@
         "./index.json"
     ],
     "scripts": {
-      "publish": "npm publish --access public"
+        "publish": "npm publish --access public"
     }
 }
