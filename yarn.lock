@@ -5,9 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@akrc/create-prettier@workspace:apps/create-prettier":
+"@akrc/create@workspace:packages/create-prettier":
   version: 0.0.0-use.local
-  resolution: "@akrc/create-prettier@workspace:apps/create-prettier"
+  resolution: "@akrc/create@workspace:packages/create-prettier"
   dependencies:
     "@akrc/monorepo-tools": "npm:^1.2.1"
     "@types/node": "npm:^20.12.7"
@@ -18,7 +18,7 @@ __metadata:
     type-fest: "npm:^4.18.0"
     typescript: "npm:^5.4.5"
   bin:
-    create-prettier: dist/index.mjs
+    create: dist/index.mjs
   languageName: unknown
   linkType: soft
 
