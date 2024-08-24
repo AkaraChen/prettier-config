@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { isMonorepoRoot } from '@akrc/monorepo-tools'
+import { isRoot } from '@akrc/monorepo-tools'
 import consola from 'consola'
 import { ensureDependencyInstalled } from 'nypm'
 import fs from 'fs'
@@ -10,14 +10,14 @@ import { PackageJson } from 'type-fest'
 const searchDir = process.cwd()
 consola.info(`Running install script in ${searchDir}...`)
 
-const isRoot = await isMonorepoRoot(searchDir)
-if (isRoot) {
+const isMonorepoRoot = await isRoot(searchDir)
+if (isMonorepoRoot) {
     consola.success(`Monorepo detected.`)
 }
 
 for (const pkg of ['prettier', 'prettier-config-akrc']) {
     await ensureDependencyInstalled(pkg, {
-        workspace: isRoot,
+        workspace: isMonorepoRoot,
         dev: true,
         cwd: searchDir,
     })
@@ -43,6 +43,12 @@ if (fs.existsSync(prettierConfigPath)) {
 }
 
 await fsp.writeFile(prettierConfigPath, `"prettier-config-akrc"`)
+await fsp.writeFile(
+    `${searchDir}/.prettierignore`,
+    `
+pnpm-lock.yaml
+    `,
+)
 consola.success(`Prettier config created.`)
 
 const packageJsonPath = `${searchDir}/package.json`
