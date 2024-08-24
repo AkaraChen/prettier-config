@@ -47,7 +47,7 @@ await fsp.writeFile(
     `${searchDir}/.prettierignore`,
     `
 pnpm-lock.yaml
-    `,
+    `.trim(),
 )
 consola.success(`Prettier config created.`)
 
